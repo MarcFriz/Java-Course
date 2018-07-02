@@ -1,14 +1,11 @@
 package Start;
 
 
-import Classes.ThreadClass;
-
 public class Main {
 
-    public static void main(String[] args)
-    {
-        System.out.println("We start here:");
-    }
+    public static void main(String[] args){System.out.println("We start here:");}
+    //TODO 0:
+    //Write UnitTest for all Methods in this Course.
 
     //TODO 4:
     //Write 4 calculations for each Method form TODO 1
@@ -30,9 +27,9 @@ public class Main {
 
     //TODO 13
     //Nothing to do here unless you want to understand Threads.
-    public static void thread()
-    {
-        ThreadClass t = new ThreadClass();
-        t.start();
-    }
+//    public static void thread()
+//    {
+//        ThreadClass t = new ThreadClass();
+//        t.start();
+//    }
 }
