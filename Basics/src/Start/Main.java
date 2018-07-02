@@ -1,9 +1,14 @@
 package Start;
+import Classes.Structure;
 
 
 public class Main {
 
-    public static void main(String[] args){System.out.println("We here:");}
+    public static void main(String[] args)
+    {
+        System.out.println("We start here:");
+
+    }
     //TODO 0:
     //Write UnitTest for all Methods in this Course.
 

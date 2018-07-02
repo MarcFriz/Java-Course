@@ -2,8 +2,30 @@ package Classes;
 
 
 public class Structure {
-    //TODO 1:
-    //Add 4 Method (addition, subtraction, multiplication, division)
+
+    public double addition(double zahl1, double zahl2)
+    {
+        double ergebnis = zahl1 + zahl2;
+        return(ergebnis);
+    }
+
+    public double subtraction(double zahl1, double zahl2)
+    {
+        double ergebnis = zahl1 - zahl2;
+        return(ergebnis);
+    }
+
+    public double multiplication(double zahl1, double zahl2)
+    {
+        double ergebnis = zahl1 * zahl2;
+        return(ergebnis);
+    }
+
+    public double division(double zahl1, double zahl2)
+    {
+        double ergebnis = zahl1 / zahl2;
+        return(ergebnis);
+    }
 
     //TODO 2:
     //Add a Method to control the right answer from TODO 1
