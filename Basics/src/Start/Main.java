@@ -3,7 +3,7 @@ package Start;
 
 public class Main {
 
-    public static void main(String[] args){System.out.println("We start here:");}
+    public static void main(String[] args){System.out.println("We here:");}
     //TODO 0:
     //Write UnitTest for all Methods in this Course.
 
