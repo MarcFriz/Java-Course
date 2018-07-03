@@ -32,9 +32,59 @@ public class Structure {
     //Use "prediction", "right answer" and "variant" as given parameter
     //Use If Else for this task
 
+    public double rechnen (double zahl1, double zahl2, String aktion, double ergebnis)
+    {
+        double re = 0;
+
+        if (aktion == "plus")
+        {
+            double ergebnisplus = addition(zahl1, zahl2);
+            if(ergebnis == ergebnisplus)
+            {
+                re = ergebnisplus;
+            } else
+            {
+                re = 0;
+            }
+        } else if (aktion == "minus")
+        {
+            double ergebnisminus = subtraction(zahl1, zahl2);
+            if(ergebnis == ergebnisminus)
+            {
+                re = ergebnisminus;
+            } else
+            {
+                re = 0;
+            }
+        } else if (aktion == "multiplikation")
+        {
+            double ergebnismal = multiplication(zahl1, zahl2);
+            if(ergebnis == ergebnismal)
+            {
+                re = ergebnismal;
+            } else
+            {
+                re = 0;
+            }
+        } else if (aktion == "division")
+        {
+            double ergebnisdiv = division(zahl1, zahl2);
+            if(ergebnis == ergebnisdiv)
+            {
+                re = ergebnisdiv;
+            } else
+            {
+                re = 0;
+            }
+        }
+        return(re);
+    }
+
     //TODO 3
-    //Write a Loop witch fills a Array with given Numbers.
+    //Write a Loop which fills a Array with given Numbers.
     //Use the Array as a global one.
+
+    
 
     //TODO 6:
     //Write a Method for reading a Logfile with the given parameter "filter"

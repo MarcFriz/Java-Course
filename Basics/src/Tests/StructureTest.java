@@ -36,4 +36,11 @@ class StructureTest {
         double ergebnisAusDerRechnung = Rechnung1.division(5,5);
         assert(ergebnisAusDerRechnung == 1);
     }
+    @org.junit.jupiter.api.Test
+    void taschenrechner()
+    {
+        Structure rechnungGes = new Structure();
+        double ergebnisAusDerRechnung = rechnungGes.rechnen(5,5, "minus", 0);
+        assert(ergebnisAusDerRechnung == 0);
+    }
 }
