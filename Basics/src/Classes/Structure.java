@@ -3,8 +3,10 @@ package Classes;
 
 public class Structure {
 
+    public int[] arr = new int[100];
+
     double returnwert = 0;
-    int counter = 0;
+    int zahlVonAussen = 0;
 
     public double addition(double zahl1, double zahl2)
     {
@@ -81,14 +83,14 @@ public class Structure {
     //Write a Loop which fills an Array with given Numbers.
     //Use the Array as a global one.
 
-    public void derLoop()
+    public void derLoop(int zahlVonAussen)
     {
 
-        double[] arr = new double[counter];
-        for(int bla=0; counter < 10; bla++)
+        for(int i = 0; i<=99; i++)
         {
-            arr[0] = 24;
-            System.out.println(arr);
+            arr[i] = zahlVonAussen;
+            zahlVonAussen = zahlVonAussen+1;
+            System.out.println(arr[i]);
         }
     }
 
