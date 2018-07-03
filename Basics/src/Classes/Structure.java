@@ -3,6 +3,9 @@ package Classes;
 
 public class Structure {
 
+    double returnwert = 0;
+    int counter = 0;
+
     public double addition(double zahl1, double zahl2)
     {
         double ergebnis = zahl1 + zahl2;
@@ -27,14 +30,68 @@ public class Structure {
         return(ergebnis);
     }
 
-    //TODO 2:
-    //Add a Method to control the right answer from TODO 1
-    //Use "prediction", "right answer" and "variant" as given parameter
-    //Use If Else for this task
+    public double rechnen (double zahl1, double zahl2, String aktion, double ergebnis)
+    {
+
+        if (aktion == "addition")
+        {
+            double ergebnisaddition = addition(zahl1, zahl2);
+            if(ergebnis == ergebnisaddition)
+            {
+                returnwert = ergebnisaddition;
+            } else
+            {
+                returnwert = 0;
+            }
+        } else if (aktion == "subtraction")
+        {
+            double ergebnissubtraction = subtraction(zahl1, zahl2);
+            if(ergebnis == ergebnissubtraction)
+            {
+                returnwert = ergebnissubtraction;
+            } else
+            {
+                returnwert = 0;
+            }
+        } else if (aktion == "multiplication")
+        {
+            double ergebnismultiplication = multiplication(zahl1, zahl2);
+            if(ergebnis == ergebnismultiplication)
+            {
+                returnwert = ergebnismultiplication;
+            } else
+            {
+                returnwert = 0;
+            }
+        } else if (aktion == "division")
+        {
+            double ergebnisdivision = division(zahl1, zahl2);
+            if(ergebnis == ergebnisdivision)
+            {
+                returnwert = ergebnisdivision;
+            } else
+            {
+                returnwert = 0;
+            }
+        }
+        return(returnwert);
+    }
 
     //TODO 3
-    //Write a Loop witch fills a Array with given Numbers.
+    //Write a Loop which fills an Array with given Numbers.
     //Use the Array as a global one.
+
+    public void derLoop()
+    {
+
+        double[] arr = new double[counter];
+        for(int bla=0; counter < 10; bla++)
+        {
+            arr[0] = 24;
+            System.out.println(arr);
+        }
+    }
+
 
     //TODO 6:
     //Write a Method for reading a Logfile with the given parameter "filter"
