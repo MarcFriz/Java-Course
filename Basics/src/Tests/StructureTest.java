@@ -37,10 +37,34 @@ class StructureTest {
         assert(ergebnisAusDerRechnung == 1);
     }
     @org.junit.jupiter.api.Test
-    void taschenrechner()
+    void taschenrechner1()
     {
         Structure rechnungGes = new Structure();
-        double ergebnisAusDerRechnung = rechnungGes.rechnen(5,5, "minus", 0);
+        double ergebnisAusDerRechnung = rechnungGes.rechnen(5,5, "addition", 10);
+        assert(ergebnisAusDerRechnung == 10);
+    }
+
+    @org.junit.jupiter.api.Test
+    void taschenrechner2()
+    {
+        Structure rechnungGes = new Structure();
+        double ergebnisAusDerRechnung = rechnungGes.rechnen(5,5, "subtraction", 0);
         assert(ergebnisAusDerRechnung == 0);
+    }
+
+    @org.junit.jupiter.api.Test
+    void taschenrechner3()
+    {
+        Structure rechnungGes = new Structure();
+        double ergebnisAusDerRechnung = rechnungGes.rechnen(5,5, "multiplication", 25);
+        assert(ergebnisAusDerRechnung == 25);
+    }
+
+    @org.junit.jupiter.api.Test
+    void taschenrechner4()
+    {
+        Structure rechnungGes = new Structure();
+        double ergebnisAusDerRechnung = rechnungGes.rechnen(5,5, "division", 1);
+        assert(ergebnisAusDerRechnung == 1);
     }
 }
