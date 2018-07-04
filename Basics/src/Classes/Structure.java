@@ -6,7 +6,6 @@ public class Structure {
     public int[] arr = new int[100];
 
     double returnwert = 0;
-    int zahlVonAussen = 0;
 
     public double addition(double zahl1, double zahl2)
     {
@@ -79,14 +78,11 @@ public class Structure {
         return(returnwert);
     }
 
-    //TODO 3
-    //Write a Loop which fills an Array with given Numbers.
-    //Use the Array as a global one.
 
     public void derLoop(int zahlVonAussen)
     {
 
-        for(int i = 0; i<=99; i++)
+        for(int i = 0; i < arr.length; i++)
         {
             arr[i] = zahlVonAussen;
             zahlVonAussen = zahlVonAussen+1;

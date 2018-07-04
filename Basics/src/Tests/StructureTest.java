@@ -62,7 +62,7 @@ class StructureTest {
     }
 
     @org.junit.jupiter.api.Test
-    void test_schleifetodo3() {
+    void test_DerLoop() {
         Structure schleife = new Structure();
         schleife.derLoop(0);
 
