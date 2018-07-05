@@ -14,10 +14,6 @@ public class Main {
     //TODO 0:
     //Write UnitTest for all Methods in this Course.
 
-    //TODO 4:
-    //Write 4 calculations for each Method form TODO 1
-    //Use a Loop like from TODO 3
-
     public static int fourCalculations(int secondNumber)
     {
         Structure calculations = new Structure();
