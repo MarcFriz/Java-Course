@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args)
     {
         System.out.println("We start here:");
+        fourCalculations(15);
 
 
     }
@@ -16,6 +17,42 @@ public class Main {
     //TODO 4:
     //Write 4 calculations for each Method form TODO 1
     //Use a Loop like from TODO 3
+
+    public static int fourCalculations(int secondNumber)
+    {
+        Structure calculations = new Structure();
+        int counter = 0;
+
+        for(int i= 0; i <= 6 ;i+=2)
+        {
+            double ergebnis = calculations.addition(i, i);
+            System.out.println("Ergebnis der Addition: " + ergebnis);
+            counter++;
+        }
+
+        for(int i= 0; i < 4 ;i++)
+        {
+            double ergebnis = calculations.subtraction(secondNumber, i);
+            System.out.println("Ergebnis der Subtraktion: " + ergebnis);
+            counter++;
+        }
+
+        for(int i= 0; i <= 6 ;i+=2)
+        {
+            double ergebnis = calculations.multiplication(i, i);
+            System.out.println("Ergebnis der Multiplikation: " + ergebnis);
+            counter++;
+        }
+
+        for(int i= 1; i <= 7 ;i+=2)
+        {
+            double ergebnis = calculations.division(secondNumber, i);
+            System.out.println("Ergebnis der Division: " + ergebnis);
+            counter++;
+        }
+        return(counter);
+
+    }
 
     //TODO 5:
     //Write a Method in the Structure package which counts the character in a given String and give it back.
