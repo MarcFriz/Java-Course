@@ -90,6 +90,12 @@ public class Structure {
         }
     }
 
+    public int charCounter(String randomGivenString)
+    {
+        int numberOfChars = randomGivenString.length();
+        return(numberOfChars);
+    }
+
 
     //TODO 6:
     //Write a Method for reading a Logfile with the given parameter "filter"

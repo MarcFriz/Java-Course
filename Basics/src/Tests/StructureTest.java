@@ -71,5 +71,11 @@ class StructureTest {
 
         }
     }
+    @org.junit.jupiter.api.Test
+    void test_charCounter() {
+        Structure charCounter = new Structure();
+        int numberOfChars = charCounter.charCounter("Hallo");
+        assert (numberOfChars == 5);
+    }
 
 }
